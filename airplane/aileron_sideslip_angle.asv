@@ -1,0 +1,23 @@
+% aileron to sideslip angle beta
+clear; close all;
+s=tf('s');
+
+zeta_d=0.00923;
+omega_nd=0.129;
+inv_Ts
+inv_
+
+Dlat= (s^2+2*zeta_d*omega_nd*s+omega_nd^2)
+
+G=-0.0344*(s+0.008)*(s+3.49)*(s-2.95)/Dlon;
+
+margin(G);
+figure();
+pzmap(G);
+figure();
+step(G);
+figure();
+impulse(G);
+
+
+big;
